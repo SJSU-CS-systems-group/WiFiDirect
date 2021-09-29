@@ -39,6 +39,8 @@ import java.util.List;
 /**
  * A ListFragment that displays available peers on discovery and requests the
  * parent activity to handle user interaction events
+ *
+ * UI Class that displays the DeviceDetailFragment componenets
  */
 public class DeviceListFragment extends ListFragment implements PeerListListener {
 

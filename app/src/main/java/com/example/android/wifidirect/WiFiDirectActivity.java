@@ -39,6 +39,11 @@ import android.widget.Toast;
 import com.example.android.wifidirect.DeviceListFragment.DeviceActionListener;
 
 /**
+ * NOTE: THIS IS THE MAIN ENTRY POINT OF this project.
+ * Contains the main UI and handles change state events
+ *
+ *
+ *
  * An activity that uses WiFi Direct APIs to discover and connect with available
  * devices. WiFi Direct APIs are asynchronous and rely on callback mechanism
  * using interfaces to notify the application of operation success or failure.
@@ -54,7 +59,7 @@ public class WiFiDirectActivity extends Activity implements ChannelListener, Dev
 
     private final IntentFilter intentFilter = new IntentFilter();
     private Channel channel;
-    private BroadcastReceiver receiver = null;
+    private BroadcastReceiver receiver = null; // see WifiDirectBroadcastReciever
 
     /**
      * @param isWifiP2pEnabled the isWifiP2pEnabled to set
@@ -63,10 +68,11 @@ public class WiFiDirectActivity extends Activity implements ChannelListener, Dev
         this.isWifiP2pEnabled = isWifiP2pEnabled;
     }
 
+    // main UI entry point
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.main); // under folder res/layout/main
 
         // add necessary intent values to be matched.
 
