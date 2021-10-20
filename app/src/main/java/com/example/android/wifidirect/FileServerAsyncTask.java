@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.android.wifidirect.WiFiDirectActivity;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
