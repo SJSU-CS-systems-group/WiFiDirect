@@ -5,12 +5,10 @@ A SJSU CS Systems Group Disconnected Data Distribution project under Prof. Ben R
 ## About:
 - Wi-Fi Direct is a Wi-Fi standard for peer-to-peer connections that allows two devices to directly connect with one another. All Android devices have this feature natively but it has to be enabled under Settings. IOS devices currently do not implement Wi-Fi Direct :(.
 
-- This repository contains code cloned from /samples/WiFiDirectDemo folder from https://android.googlesource.com/platform/
-The above repository is outdated and would requires tweaking to get it running. Thankfully this person was kind enough to update the dead dependency links to work on current Android devices. https://github.com/yinghuihong/WiFiDirectDemo
+- This repository contains code modified from the /samples/WiFiDirectDemo folder in https://android.googlesource.com/platform/
+The google repository is outdated and requires tweaking to get it running. Thankfully this person was kind enough to update the dead everything to work on current Android devices https://github.com/yinghuihong/WiFiDirectDemo. This repository is based off of yinghuihong's repository.
 
-
-## Timeline:
-- For Fall 2021 our goal is to get modify this sample and get Wi-Fi Direct working with Signal to allow two Android devices to directly send messages to each other.
+- Efforts to separate the WifiDirect library code to from the Android UI code can be found here https://github.com/SJSU-CS-systems-group/SimpleWifiDirect
 
 ## Requirements:
 - Either Android Studio or Gradle and JDK installed (Android Studio comes with both automatically)
@@ -45,4 +43,5 @@ Ask Ben for permission :)
 
 - Android Studio likes to change it's UI every couple of years, so try to find Android Studio tutorials at most 1 -2 years before the time you are currently reading this.
 
+Good Luck!
 
