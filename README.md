@@ -8,7 +8,7 @@ A SJSU CS Systems Group Disconnected Data Distribution project under Prof. Ben R
 - This repository contains code modified from the /samples/WiFiDirectDemo folder in https://android.googlesource.com/platform/
 The google repository is outdated and requires tweaking to get it running. Thankfully this person was kind enough to update the dead everything to work on current Android devices https://github.com/yinghuihong/WiFiDirectDemo. This repository is based off of yinghuihong's repository.
 
-- Efforts to separate the WifiDirect library code to from the Android UI code can be found here https://github.com/SJSU-CS-systems-group/SimpleWifiDirect
+- Efforts to separate the WifiDirect library code from the Android UI code can be found here https://github.com/SJSU-CS-systems-group/SimpleWifiDirect
 
 ## Requirements:
 - Either Android Studio or Gradle and JDK installed (Android Studio comes with both automatically)
