@@ -175,7 +175,6 @@ public class DeviceListFragment extends ListFragment implements PeerListListener
     }
 
     /**
-     * 
      */
     public void onInitiateDiscovery() {
         if (progressDialog != null && progressDialog.isShowing()) {

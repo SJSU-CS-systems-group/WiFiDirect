@@ -97,6 +97,8 @@ public class WiFiDirectBroadcastReceiver extends BroadcastReceiver {
                 DeviceDetailFragment fragment = (DeviceDetailFragment) activity
                         .getFragmentManager().findFragmentById(R.id.frag_detail);
                 manager.requestConnectionInfo(channel, fragment);
+
+                // -> DeviceDetailFragment onConnectionInfoAvailable
             } else {
                 // It's a disconnect
                 activity.resetData();

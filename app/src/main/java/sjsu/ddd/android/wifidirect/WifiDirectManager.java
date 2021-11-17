@@ -27,6 +27,15 @@ public class WifiDirectManager {
     public WifiP2pManager.Channel channel;
 
     public WifiDirectManager(Context context) {
+        this.initOwner(context);
+    }
+
+    public void initOwner(Context context) {
+        this.manager = (WifiP2pManager) context.getSystemService(Context.WIFI_P2P_SERVICE);
+        this.channel = this.manager.initialize(context, Looper.getMainLooper(), null);
+    }
+
+    public void initClient(Context context) {
         this.manager = (WifiP2pManager) context.getSystemService(Context.WIFI_P2P_SERVICE);
         this.channel = this.manager.initialize(context, Looper.getMainLooper(), null);
     }
